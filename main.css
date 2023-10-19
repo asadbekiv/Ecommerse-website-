@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+*{
+    margin: o;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Abel', sans-serif;
+    
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: azure;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.10);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+
+}
+
+.novbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.novbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+.novbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color:  black;
+    transition: 0.3s ease;
+}
+
+.novbar li a:hover,
+.novbar li a.active{
+    color: rgb(77, 147, 147);
+}
+
+.novbar li a.active::after,
+.novbar li a:hover::afters{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background-position: absalute;
+    bottom: -4px;
+    left: 20px;
+
+
+}
+
+.hero{
+    background-image: url(./img/hero4.png);
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding:  0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    
+
+}
+
+.hero h4{
+    padding-bottom: 15px;
+}
+
+.hero h1{
+    color: rgb(37, 148, 148);
+}
+
+
+/* CSS */
+.hero button{
+    background-color: #fbfbfb;
+    border-radius: 30px;
+    box-shadow: #422800 4px 4px 0 0;
+    color: #422800;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 0 18px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    border: 2px solid #422800;
+}
+
+.hero button:hover {
+  background-color: #fff;
+}
+
+.hero button:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+.features1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px 40px;
+    margin: 10px 15px;
+    
+
+}
+.features1 .fe-box{
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0,0,0,0.03);
+    border: 1px solid rgb(160, 153, 153);
+    border-radius: 3px;
+    margin: 15px 0;
+
+}
+
+.features1 .fe-box:hover{
+    box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.03);
+}
+
+.features1 .fe-box h6{
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: rgb(51, 60, 57);
+    background-color: rgb(206, 199, 199);
+
+}
+
+.features1 .fe-box img{
+    width: 100%;
+    margin-bottom: 10px;
+    
+}
+
+
+.features1 .fe-box h6{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #c2c5c5;
+}
+
+.prodacts h1{
+    text-align: center;
+
+}
+.prodacts p{
+    text-align: center;
+}
+.prodacts .pro-container {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+.prodacts .pro{
+    text-align: start;
+    width: 10%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid rgb(160, 153, 153);
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.03);
+    margin: 15px 0;
+    transition: 0.2s;
+    position: relative;
+}
+.prodacts .pro img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.prodacts .pro:hover{
+    box-shadow:20px 20px 30px rgba(0,0,0,0.06);
+}
+
+.prodacts .pro .des{
+    text-align: center;
+    padding: 10px 0;
+}
+
+.prodacts .pro .des span{
+    color: rgb(94, 109, 103);
+    font-size: 12px;
+    
+    
+}
+
+
+
+.prodacts .pro .des h5{
+    /*text-align: start;*/
+    padding-top: 7px;
+    color: #656e6e;
+    font-size: 15px;
+    margin: auto;
+}
+
+.prodacts .pro .des  i{
+    font-size: 12px;
+    color: rgb(207, 207, 21);
+    
+}
+
+
+.prodacts .pro .des .star i{
+    color: yellow;
+}
+
+.prodacts .pro .cart{
+    /*width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    font-weight: 500;*/
+    padding-bottom: 25px;
+    color: hsl(160, 95%, 52%);
+
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+
+}
+
+.prodacts .pro .des h4{
+    text-align: start;
+}
+
+
+
+#baner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(./img/banner/b2.jpg);
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+
+
+}
+
+#baner h4{
+    color: #fbfbfb;
+    font-size: 16px;
+
+}
+
+#baner h2{
+    color: #fff;
+    font-size: 30px;
+    padding: 10px 0;
+}
+
+#baner h2 span{
+    color: rgb(119, 10, 10);
+}
+
+
+button.normal{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #422800;
+    background-color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.3s;
+}
+
+#sm-banner .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+    background-image: url(./img/banner/b17.jpg);
+    min-width: 580px;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+   
+    
+}
+
+
+#sm-banner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.section-p1{
+    margin: 50px;
+}
+
+#sm-banner .banner-box button{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #422800;
+    background-color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.3s;
+
+}
+
+#sm-banner h4{
+    color: bisque;
+    font-size: 20px;
+    font-weight: 300;
+    
+}
+
+#sm-banner h2{
+    color: rgb(228, 226, 223);
+    font-size: 20px;
+    font-weight: 800;
+    
+}
+
+
+
+
+
+
+
+
+
+.cd{
+    margin-top: 0;
+}
